@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		 person = {
+				name: "stephen", 
+				yearOfBirth: 1997, 
+				maritalStatus: "devorsed",
+				age: function(dob,cd){return(cd - dob)},
+				myState: function (){ 
+						var birth = person.age(person.yearOfBirth,2017)
+						alert("my name is"+" "+ person.name); 
+						alert("I was born in"+" "+person.yearOfBirth); 
+						alert("And I am" + " "+ person.maritalStatus); 
+						alert("I am " +" "+ birth +" Years old");
+					}
+			 };
+	
+
+	</script>
+	<title>stephen</title>
+</head>
+<body>
+<input type="button" value="click me" onclick="person.myState()">
+
+</input>
+</body>
+</html>
